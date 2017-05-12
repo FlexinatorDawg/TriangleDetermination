@@ -18,8 +18,8 @@ namespace TriangleDetermination
             {
                 return TriangleStyles.Styles.Isosceles;
             }
-            else
-            {
+            else 
+            { 
                 return TriangleStyles.Styles.Scalene;
             }
         }
