@@ -14,7 +14,8 @@ namespace TriangleDetermination
             {
                 return TriangleStyles.Styles.Equilateral;
             }
-            else if (sideALenght == sideBLenght || sideALenght == sideCLenght)
+            else if ((sideALenght == sideBLenght || sideALenght == sideCLenght) 
+                || (sideBLenght == sideALenght || sideBLenght == sideCLenght))
             {
                 return TriangleStyles.Styles.Isosceles;
             }

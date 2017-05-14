@@ -22,7 +22,7 @@ namespace TriangleDeterminationTest
 
             target.DetermineCommand.Execute(null);
 
-            Assert.AreEqual(TriangleStyles.Styles.Scalene.ToString(), target.TriangleStyleResult);
+            Assert.IsTrue(target.TriangleStyleResult.Contains(TriangleStyles.Styles.Scalene.ToString()));
         }
     }
 }

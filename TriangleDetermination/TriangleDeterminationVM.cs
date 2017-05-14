@@ -41,7 +41,7 @@ namespace TriangleDetermination
         private void DetermineExecute(object parameter)
         {
             TriangleStyleResult = string.Empty;
-            TriangleStyleResult = _determinationService.DetermineTriangle(SideA, SideB, SideC);
+            TriangleStyleResult = string.Format("I am a {0} triangle", _determinationService.DetermineTriangle(SideA, SideB, SideC));
         }
 
         private bool DetermineCanExecute(object parameter)

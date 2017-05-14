@@ -18,6 +18,26 @@ namespace TriangleDeterminationTest
         }
 
         [TestMethod]
+        public void Test_GetTriangleStyle_Given_A_AND_B_IsSameNumbers_THEN_ExpectIsoscelesTriangle()
+        {
+            var target = new TriangleStyleCalculator();
+
+            var result = target.GetTriangleStyle(4, 4, 2);
+
+            Assert.AreEqual(TriangleStyles.Styles.Isosceles, result);
+        }
+
+        [TestMethod]
+        public void Test_GetTriangleStyle_Given_B_AND_C_IsSameNumbers_THEN_ExpectIsoscelesTriangle()
+        {
+            var target = new TriangleStyleCalculator();
+
+            var result = target.GetTriangleStyle(2, 4, 4);
+
+            Assert.AreEqual(TriangleStyles.Styles.Isosceles, result);
+        }
+
+        [TestMethod]
         public void Test_GetTriangleStyle_Given_TwoSameNumbers_THEN_ExpectIsoscelesTriangle()
         {
             var target = new TriangleStyleCalculator();
